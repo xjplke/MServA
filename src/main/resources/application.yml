@@ -1,0 +1,21 @@
+# Server settings (ServerProperties)
+server:
+  port: 8050
+  address: 127.0.0.1
+  sessionTimeout: 30
+  contextPath: ""
+
+#for jedis
+jedis:
+  host: 127.0.0.1
+  port: 6379
+  timeout: 2000
+  password: 123qwe
+  pool:
+    config:
+      maxActive: 20
+      maxIdle: 10
+      minIdle: 5
+      maxWait: 2000
+      testOnBorrow: true
+      testOnReturn: true
